@@ -9,10 +9,21 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        ul {
+            list-style-type: circle;
+            padding-left: .5em;
+            margin: 0;
+        }
+        
+        li {
+            margin: 1em 0;
+        }
+    </style>
 </head>
 
 <body>
-
     <div class="container">
         <nav class="navbar navbar-expand navbar-light bg-faded">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
@@ -24,15 +35,67 @@
                 </li>
             </ul>
         </nav>
-        <div class="jumbotron">
-            <h1 class="display-3">Tim Statler</h1>
-            <p class="lead">Technical Writer</p>
-            <hr class="my-2">
-            <p class="lead">
-                <a class="btn btn-primary btn-lg" href="writing.html" role="button">Writing Samples</a>
-            </p>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">Tim Statler</h1>
+                <p class="lead">Senior technical writer experienced creating developer documentation for a variety of technology stacks, developer tools, and APIs.
+                </p>
+            </div>
         </div>
+        <div>
+            <h1 class="display-5">Writing Samples</h1>
+        </div>
+        <h2 class="display-8">API Reference and User Guides</h2>
+        <p>I researched and wrote <a href="https://docs.apcera.com/api/api-overview/" target="_blank">all API documentation</a> for the Apcera container management system, including API reference, API user guides, sample code and sample apps, including:</p>
+        <p>
+            <ul>
+                <ul>
+                    <li><a href="http://docs.apcera.com/api/apcera-api-endpoints/" target="_blank">Apcera Platform API
+                        Reference</a> &mdash; API reference for managing an Apcera container cluster. All API endpoints and resource types were described in a Swagger specification (
+                        <a href="https://docs.apcera.com/api/apcera-api.json" target="_blank">JSON file</a> ) and the HTML output was generated from a custom Ruby build script that I created.
+                    </li>
+                    <li>
+                        <a href="https://docs.apcera.com/api/api-tasks/" target="_blank">Platform API Recipes</a> &mdash; Companion guide to the Platform API reference (above) that provides recipes for specific API tasks, as well as the equivalent CLI
+                        commands. I tested all recipes using <code>curl</code> and PostMan and wrote all accompanying content.
+                    </li>
+                    <li>
+                        <a href="https://docs.apcera.com/api/events-system-api/" target="_blank">Events System API </a> &mdash; Explains use cases and provides working examples of the Events System API provided in the Apcera container management platform,
+                        including a quick feature demonstration using the Apcera CLI tool, as well a complete code example that demonstrates how to subscribe to events via WebSockets.
+                    </li>
+                </ul>
+        </p>
+        </ul>
+        <ul>
+            <p class="h3">Developer & User Guides</p>
+            <ul>
+                <li>
+                    <a href="https://wiki.appcelerator.org/display/guides2/Creating+Your+First+Titanium+App" target="_blank">Creating Your First Titanium App</a> &mdash; Demonstrates how to create a multi-platform application for iOS and Android using
+                    the
+                    <a href="https://www.appcelerator.com/titanium/titanium-sdk/4/">Titanium SDK</a>. I posted the <a href="https://github.com/appcelerator/Documentation-Examples" target="_blank">completed source files</a> for the tutorial to Github.
+                </li>
+
+                <li>
+                    <a href="https://wiki.appcelerator.org/display/guides2/Alloy+Tasks+in+Studio" target="_blank">Common Alloy Tasks</a> &mdash; Explains how to use the Titanium Studio authoring tool to perform common setup and development tasks when
+                    working with the Alloy framework and the Titanium SDK to create mobile applications.
+                </li>
+
+                <li><a href="https://docs.apcera.com/networks/concepts/" target="_blank">Virtual Networks</a> &mdash; Explains how to create networks that allow Apcera container instances running on different hosts and networks to communicate via IP or named
+                    addresses.
+                </li>
+
+                <li>
+                    <a href="https://docs.apcera.com/routes/sticky-sessions/" target="_blank">Configuring Sticky HTTP
+                        Sessions</a> &mdash; Explains how to use session cookies with the Apcera container management platform to have client requests routed to the same backend container instance, rather than use the default "round
+                    robin" load balancing algorithm.
+                </li>
+                <li><a href="https://docs.apcera.com/quickstart/console_tasks">Common Web Console Tasks</a> &mdash; Provides instructions for performing common management tasks on an Apcera server cluster via a web console.
+                </li>
+            </ul>
+
+        </ul>
     </div>
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
