@@ -11,13 +11,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <style>
-        ul {
+        .doclist {
             list-style-type: circle;
             padding-left: .5em;
             margin: 0;
         }
         
-        li {
+        .doclist li {
             margin: 1em 0;
         }
     </style>
@@ -47,11 +47,16 @@
             <p>
                 A collection of writing samples from previous positions that are publicly available.
             </p>
+
+            <ul>
+                <li><a href="#api">API Reference and Users Guides</a></li>
+                <li><a href="#user">Developer & User Guides</a></li>
+            </ul>
         </div>
-        <h2 class="display-8">API Reference and User Guides</h2>
+        <h2 id="api" class="display-8">API Reference and API User Guides</h2>
         <p>I researched and wrote <a href="https://docs.apcera.com/api/api-overview/" target="_blank">all API documentation</a> for the Apcera container management system, including API reference, API user guides, sample code and sample apps, including:</p>
         <p>
-            <ul>
+            <ul class="doc_list">
                 <ul>
                     <li><a href="http://docs.apcera.com/api/apcera-api-endpoints/" target="_blank">Apcera Platform API
                         Reference</a> &mdash; API reference for managing an Apcera container cluster. All API endpoints and resource types were described in a Swagger specification (
@@ -68,8 +73,8 @@
                 </ul>
         </p>
         </ul>
+        <h2 id="user" class="display-8">Developer & User Guides</h2>
         <ul>
-            <p class="h3">Developer & User Guides</p>
             <ul>
                 <li>
                     <a href="https://wiki.appcelerator.org/display/guides2/Creating+Your+First+Titanium+App" target="_blank">Creating Your First Titanium App</a> &mdash; Demonstrates how to create a multi-platform application for iOS and Android using
